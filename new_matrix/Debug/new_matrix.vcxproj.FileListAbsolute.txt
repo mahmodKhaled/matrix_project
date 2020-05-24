@@ -1,0 +1,2 @@
+C:\Users\mahmo\source\repos\new_matrix\Debug\new_matrix.exe
+C:\Users\mahmo\source\repos\new_matrix\Debug\new_matrix.pdb
