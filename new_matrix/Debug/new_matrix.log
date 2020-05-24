@@ -1,4 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (matrix.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  new_matrix.cpp
-C:\Users\mahmo\source\repos\new_matrix\new_matrix.cpp(18,21): warning C4101: 'result': unreferenced local variable
-  new_matrix.vcxproj -> C:\Users\mahmo\source\repos\new_matrix\Debug\new_matrix.exe
