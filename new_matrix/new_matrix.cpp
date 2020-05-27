@@ -7,6 +7,7 @@
 #include "show_matrix_value.h"
 #include "addition.h"
 #include "subtraction.h"
+#include "transpose.h"
 using namespace std;
 int main()
 {
@@ -62,6 +63,16 @@ int main()
         }
         else if (choice == "C=A-B") {
             subtract_two_matrices(matrix1, matrix2, result_matrix);
+            show_matrix(result_matrix);
+            cout << "---------------------" << endl;
+        }
+        else if (choice == "C=A'") {
+            transpose_matrix(matrix1,result_matrix);
+            show_matrix(result_matrix);
+            cout << "---------------------" << endl;
+        }
+        else if (choice == "C=B'") {
+            transpose_matrix(matrix2, result_matrix);
             show_matrix(result_matrix);
             cout << "---------------------" << endl;
         }

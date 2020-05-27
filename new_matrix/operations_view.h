@@ -11,7 +11,7 @@ void show_operations() {
     cout << "Addition: C = A + B" << endl;
     cout << "Subtraction: C = A - B" << endl;
     cout << "Multiplication: C = A * B" << endl;
-    cout << "Transpose: C = A’" << endl;
+    cout << "Transpose: C = A' or C = B'" << endl;
     cout << "Division: C = A/B" << endl;
 }
 

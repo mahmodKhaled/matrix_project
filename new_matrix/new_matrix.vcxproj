@@ -148,6 +148,7 @@
     <ClInclude Include="operations_view.h" />
     <ClInclude Include="show_matrix_value.h" />
     <ClInclude Include="subtraction.h" />
+    <ClInclude Include="transpose.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

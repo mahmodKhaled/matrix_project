@@ -35,5 +35,8 @@
     <ClInclude Include="subtraction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="transpose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
