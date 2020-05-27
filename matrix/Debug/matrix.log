@@ -1,0 +1,3 @@
+﻿  new_matrix.cpp
+C:\Users\mahmo\source\repos\new_matrix\new_matrix.cpp(18,21): warning C4101: 'result': unreferenced local variable
+  matrix.vcxproj -> C:\Users\mahmo\source\repos\matrix\Debug\matrix.exe
