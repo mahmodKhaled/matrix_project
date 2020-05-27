@@ -1,2 +1,0 @@
-C:\Users\mahmo\source\repos\matrix\Debug\matrix.exe
-C:\Users\mahmo\source\repos\matrix\Debug\matrix.pdb
