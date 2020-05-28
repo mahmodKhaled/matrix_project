@@ -145,6 +145,8 @@
   <ItemGroup>
     <ClInclude Include="addition.h" />
     <ClInclude Include="input_conversion.h" />
+    <ClInclude Include="division.h" />
+    <ClInclude Include="multiplication.h" />
     <ClInclude Include="operations_view.h" />
     <ClInclude Include="show_matrix_value.h" />
     <ClInclude Include="subtraction.h" />
