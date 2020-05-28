@@ -14,7 +14,7 @@ using namespace std;
 int main()
 {
     vector<vector<double>> mat1{}, mat2{};
-    double matrix1[3][3]{}, matrix2[3][3]{}, result_matrix[3][3]{};
+    double matrix1[3][3]{}, matrix2[3][3]{}, result_matrix[3][3]{}, inv_matrix[3][3]{};
     vector<double> fill_matrix{}, vec1{}, vec2{}, vec3{};
     string data{}, sum_numbers{}, choice{};
     int found{};
@@ -28,7 +28,7 @@ int main()
                 break;
             }
             else {
-                operations_in_input(data, sum_numbers, fill_matrix, number, found);
+                operations_in_input(data, sum_numbers, fill_matrix, number);
                 separate_fill_matrix_into_three_vectors(vec1, vec2, vec3, fill_matrix);
                 if (i == 0) {
                     fill_vector2D(mat1, vec1, vec2, vec3);
@@ -107,8 +107,8 @@ int main()
                     cout << "Can't get the inverse" << endl;
                     continue;
                 }
-                inv(matrix1, result_matrix);
-                show_matrix(result_matrix);
+                inv(matrix1, inv_matrix);
+                show_matrix(inv_matrix);
             }
             else if (choice == "C=B`") {
                 double detereminant = DET(matrix2);
@@ -116,8 +116,8 @@ int main()
                     cout << "Can't get the inverse" << endl;
                     continue;
                 }
-                inv(matrix2, result_matrix);
-                show_matrix(result_matrix);
+                inv(matrix2, inv_matrix);
+                show_matrix(inv_matrix);
             }
             else if (choice == "C=A/B") {
                 double detereminant = DET(matrix2);
@@ -125,12 +125,18 @@ int main()
                     cout << "Can't get the inverse" << endl;
                     continue;
                 }
-                inv(matrix2, result_matrix);
-                multiply_two_matrices(matrix1, result_matrix, matrix2);
-                show_matrix(matrix2);
+                inv(matrix2, inv_matrix);
+                multiply_two_matrices(matrix1, inv_matrix, result_matrix);
+                show_matrix(result_matrix);
             }
             else if (choice == "C=B/A") {
-                
+                double detereminant = DET(matrix1);
+                if (detereminant == 0) {
+                    cout << "Can't get the inverse" << endl;
+                    continue;
+                }
+                inv(matrix1, inv_matrix);
+                multiply_two_matrices(matrix2, inv_matrix, result_matrix);
                 show_matrix(result_matrix);
             }
         }
