@@ -16,7 +16,7 @@ int main()
     vector<double> fill_matrix{}, vec1{}, vec2{}, vec3{};
     string data{}, sum_numbers{}, choice{};
     int num_of_matrices{}, found{};
-    double number{}, result;
+    double number{}, result{}, detereminant{};
     cout << "Enter the number of matrices: ";
     cin >> num_of_matrices;
     cin.ignore(); // take number of matrices from the user
@@ -52,9 +52,15 @@ int main()
         }
         else if (choice[0] == 'A') {
             show_matrix(matrix1);
+            detereminant = DET(matrix1);
+            cout << "the determinant of the matrix is: " << detereminant << endl;
+            cout << "---------------------" << endl;
         }
         else if (choice[0] == 'B') {
             show_matrix(matrix2);
+            detereminant = DET(matrix2);
+            cout << "the determinant of the matrix is: " << detereminant << endl;
+            cout << "---------------------" << endl;
         }
         if (choice == "C=A+B") {
             add_two_matrices(matrix1, matrix2, result_matrix);
