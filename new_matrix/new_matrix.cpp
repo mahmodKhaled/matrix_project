@@ -20,6 +20,7 @@ int main()
     int found{};
     double number{}, result{}, detereminant{};
     while (true) {
+        cout << "you are allowed to enter two matrices at a time, press exit to close the program" << endl;
         for (int i = 0; i < 2; i++) {
             cout << "Enter the contents of the matrix: ";
             getline(cin, data); // take the input from the user
