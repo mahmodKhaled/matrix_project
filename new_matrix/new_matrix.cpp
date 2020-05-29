@@ -97,7 +97,6 @@ int main()
                 transpose_matrix(matrix2, result_matrix);
                 show_matrix(result_matrix);
                 cout << "---------------------" << endl;
-
             }
             else if (choice == "C=A`") {
                 double detereminant = DET(matrix1);
