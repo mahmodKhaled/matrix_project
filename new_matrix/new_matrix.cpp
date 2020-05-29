@@ -67,7 +67,7 @@ int main()
                 cout << "the determinant of the matrix is: " << detereminant << endl;
                 cout << "---------------------" << endl;
             }
-            if (choice == "C=A+B") {
+            else if (choice == "C=A+B") {
                 add_two_matrices(matrix1, matrix2, result_matrix);
                 show_matrix(result_matrix);
                 cout << "---------------------" << endl;
@@ -139,6 +139,9 @@ int main()
                 inv(matrix1, inv_matrix);
                 multiply_two_matrices(matrix2, inv_matrix, result_matrix);
                 show_matrix(result_matrix);
+            }
+            else {
+                cout << "Invalid input,please try again..." << endl;
             }
         }
     }
