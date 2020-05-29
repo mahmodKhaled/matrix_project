@@ -24,7 +24,6 @@ int main()
         for (int i = 0; i < 2; i++) {
             cout << "Enter the contents of the matrix: ";
             getline(cin, data); // take the input from the user
-            found = data.find('.');
             if (data == "exit") {
                 break;
             }
@@ -85,7 +84,6 @@ int main()
             else if (choice == "C=A*B") {
                 multiply_two_matrices(matrix1, matrix2, result_matrix);
                 show_matrix(result_matrix);
-
             }
             else if (choice == "C=B*A") {
                 multiply_two_matrices(matrix2, matrix1, result_matrix);
