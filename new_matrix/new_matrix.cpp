@@ -17,7 +17,6 @@ int main()
     double matrix1[3][3]{}, matrix2[3][3]{}, result_matrix[3][3]{}, inv_matrix[3][3]{};
     vector<double> fill_matrix{}, vec1{}, vec2{}, vec3{};
     string data{}, sum_numbers{}, choice{};
-    int found{};
     double number{}, result{}, detereminant{};
     while (true) {
         cout << "you are allowed to enter two matrices at a time, press exit to close the program" << endl;
