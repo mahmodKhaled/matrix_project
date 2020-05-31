@@ -20,6 +20,7 @@ int main()
     double number{}, result{}, detereminant{};
     while (true) {
         cout << "you are allowed to enter two matrices at a time, press exit to close the program" << endl;
+        cout << "Make sure that your input of matrices is as following: Y = [x x x; x x x; x x x]" << endl;
         for (int i = 0; i < 2; i++) {
             cout << "Enter the contents of the matrix: ";
             getline(cin, data); // take the input from the user
@@ -65,7 +66,7 @@ int main()
                 cout << "the determinant of the matrix is: " << detereminant << endl;
                 cout << "---------------------" << endl;
             }
-            else if (choice == "C=A+B") {
+            else if (choice == "C=A+B" || choice == "C=B+A") {
                 add_two_matrices(matrix1, matrix2, result_matrix);
                 show_matrix(result_matrix);
                 cout << "---------------------" << endl;
@@ -83,6 +84,7 @@ int main()
             else if (choice == "C=A*B") {
                 multiply_two_matrices(matrix1, matrix2, result_matrix);
                 show_matrix(result_matrix);
+
             }
             else if (choice == "C=B*A") {
                 multiply_two_matrices(matrix2, matrix1, result_matrix);

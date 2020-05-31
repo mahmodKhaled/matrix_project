@@ -39,7 +39,7 @@ void operations_in_input(string data, string sum_numbers, vector<double>& fill_m
     found2 = data.find(']');
     string edited_data = data.substr(found1 + 1, found2 - (found1 + 1));
     for (auto sub_data : edited_data) {
-        if (isspace(sub_data) != 0 || sub_data == ';') {
+        if (isspace(sub_data) != 0) {
             number = stod(sum_numbers); // convert numbers from strings into double
             fill_matrix.push_back(number);
             sum_numbers.clear();// this matrix will take all the converted numbers

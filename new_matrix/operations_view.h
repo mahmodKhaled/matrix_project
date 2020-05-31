@@ -9,7 +9,7 @@ void show_operations() {
     cout << "You can do any operation from the following:" << endl;
     cout << "write your input without spaces..." << endl;
     cout << "Show Matrix Value: A or B" << endl;
-    cout << "Addition: C = A + B" << endl;
+    cout << "Addition: C = A + B or C = B + A " << endl;
     cout << "Subtraction: C = A - B or C = B - A" << endl;
     cout << "Multiplication: C = A * B or C = B * A" << endl;
     cout << "Transpose: C = A' or C = B'" << endl;
